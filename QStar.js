@@ -19,7 +19,14 @@ function main(config) {
   config.proxies = config.proxies || [];
   config["proxy-groups"] = [];
 
-  const proxies = config.proxies.map(p => p.name);
+  const proxies = config.proxies
+.filter(p => 
+  p.name &&
+  !p.name.includes("剩余流量") &&
+  !p.name.includes("距离下次") &&
+  !p.name.includes("套餐到期")
+)
+.map(p => p.name);
 
   // ==========================
   // 工具
