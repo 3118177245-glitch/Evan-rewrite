@@ -17,7 +17,7 @@ function main(config) {
   if (!config) return config;
 
   config.proxies = config.proxies || [];
-  config["proxy-groups"] = [];
+  config["proxy-groups"] = config["proxy-groups"] || [];
 
   const proxies = config.proxies
 .filter(p => 
@@ -68,11 +68,17 @@ function main(config) {
   // 全部随机
   // ==========================
 
-  addGroup(
+  // 全球加速
+
+addGroup(
+  "🚀 全球加速",
+  "select",
+  [
     "🎲 全部随机",
-    "url-test",
-    proxies
-  );
+    ...proxies,
+    "DIRECT"
+  ]
+);
 
 
   // ==========================
@@ -237,7 +243,7 @@ function main(config) {
 
   // 最终直连
 
-  addDirectGroup("DIRECT");
+
 // ==========================
   // Rules
   // ==========================
