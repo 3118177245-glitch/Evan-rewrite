@@ -123,7 +123,9 @@ proxy-providers:
   淘气兔: {<<: *p, url: "https://vip.xn--h5qy56dzhb.vip/#/register?code=rNh8X1zf", path: ./proxy_providers/淘气兔.yaml, override: {<<: *smux, additional-prefix: "淘气兔｜"}}
   极速云: {<<: *p, url: "https://w2.rouhe88.com/#/register?code=Zl5IqVKd", path: ./proxy_providers/极速云.yaml, override: {<<: *smux, additional-prefix: "极速云｜"}}
   顶级机场: {<<: *p, url: "https://xn--mes358a9urctx.com/#/register?code=AkCxVELH", path: ./proxy_providers/顶级机场.yaml, override: {<<: *smux, additional-prefix: "顶级机场｜"}}
-  
+  猎户座: {<<: *p, url: "https://47.238.236.131/iv/verify_mode.htm?token=bf9e3f1f473f8dd479b45d6b084c700f&sid=nano", path: ./providers/liehuo.yaml, override: {prefix: "猎户座"}}
+  KittyNetwork: {<<: *p, url: "https://kaze1.aisaka-taiga.com/oosaka/27ea58c6a0a4a2aefd29618a42c858ee", path: ./providers/kitty.yaml, override: {prefix: "KittyNetwork"}}
+
 proxy-groups:
   
   # 代理组
